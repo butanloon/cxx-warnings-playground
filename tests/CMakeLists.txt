@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.16)
+project(my-lib-tests)
+add_executable(${PROJECT_NAME}-test my_lib_test.cc)
+target_compile_options(${PROJECT_NAME}-test PRIVATE -std=c++17 -Wall)
+target_link_libraries(${PROJECT_NAME}-test my-lib)

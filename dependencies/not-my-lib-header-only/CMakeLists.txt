@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.16)
+project(not-my-lib-header-only)
+add_library(${PROJECT_NAME} INTERFACE)
+target_include_directories(${PROJECT_NAME} SYSTEM INTERFACE include/)
+add_subdirectory(tests)
+add_executable(${PROJECT_NAME}-dummy-unit not_my_lib_header_only_dummy_unit.cc)
+target_compile_options(${PROJECT_NAME}-dummy-unit PRIVATE -std=c++17 -Wall)
+target_include_directories(${PROJECT_NAME}-dummy-unit PRIVATE include/)

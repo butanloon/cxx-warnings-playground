@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.16)
+project(not-my-lib-header-only-tests)
+add_executable(${PROJECT_NAME}-test1 not_my_lib_header_only_test1.cc)
+target_compile_options(${PROJECT_NAME}-test1 PRIVATE -std=c++17 -Wall)
+target_link_libraries(${PROJECT_NAME}-test1 not-my-lib-header-only)

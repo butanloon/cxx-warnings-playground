@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.16)
+project(not-my-lib)
+add_library(${PROJECT_NAME} SHARED not_my_lib.cc)
+target_compile_options(${PROJECT_NAME} PUBLIC -std=c++17 -Wall)
+target_include_directories(${PROJECT_NAME} PRIVATE include/)
+target_include_directories(${PROJECT_NAME} SYSTEM INTERFACE include/)
+add_subdirectory(tests)
