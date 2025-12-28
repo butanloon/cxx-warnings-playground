@@ -4,7 +4,7 @@ This repository is a playground for experimenting with different build configura
 
 ## Acknowledgement
 
-Sincere thanks for Sir Jonathan Müller for writing the blog. This is work is based on the article "[Tutorial: Managing Compiler Warnings with CMake](https://www.foonathan.net/2018/10/cmake-warnings/)"
+Sincere thanks for Sir Jonathan Müller for writing the blog. This work is based on the article "[Tutorial: Managing Compiler Warnings with CMake](https://www.foonathan.net/2018/10/cmake-warnings/)"
 
 ## Description
 
